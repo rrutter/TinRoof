@@ -1,0 +1,4 @@
+<div class="container-left">
+  <div id="{{user.id}}" class="user-row" (click)="showAlbums($event)" *ngFor="let user of userList let i = index">{{user.name}}</div><br>
+</div>
+<app-cardnav class="container-main" [userId]="userId"></app-cardnav>

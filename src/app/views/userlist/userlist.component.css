@@ -1,0 +1,28 @@
+.user-row
+{
+  cursor: pointer;
+  float: left;
+  display:flex;
+}
+
+.user-row:hover
+{
+  background-color: blue;
+  cursor: pointer;
+}
+
+.container-left
+{
+  float: left;
+  width: 20%;
+  overflow:auto;
+  display: grid;
+}
+
+.container-main
+{
+  width:80%;
+  height:100px;
+  float:right;
+  display:inline-block;
+}
