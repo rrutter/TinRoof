@@ -1,0 +1,7 @@
+<div ngDefaultControl [(ngModel)]="isReady" *ngIf="isReady" id="card-container">
+  <!-- album list to swap with photo list -->
+  <div ngDefaultControl [(ngModel)]="isPhoto" [hidden]="isPhoto" (click)="showPhotos($event)" *ngFor="let album of albumList let i = index" id="{{album.id}}" class="interactive-card"><img class="thumbnail" src="{{albumList[index]?.photos[0].thumbnailUrl}}" /></div>
+
+  <!-- photo list (hidden by default) -->
+  <div (click)="showBigPhoto($event)" ngDefaultControl [(ngModel)]="photoList" [(ngModel)]="!isPhoto" [hidden]="!isPhoto" *ngFor="let photo of photoList let i = index" id="{{photo.id}}" class="interactive-card"><img class="thumbnail" src="{{photoList[index].thumbnailUrl}}" /></div>
+</div>

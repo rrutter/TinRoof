@@ -1,0 +1,26 @@
+#card-container
+{
+  float: left;
+  width: 100%;
+}
+
+.interactive-card
+{
+  width: 100px;
+  height: 100px;
+  float:left;
+  cursor: pointer;
+  margin: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+.interactive-card:hover
+{
+  background-color: blue;
+}
+.thumbnail
+{
+  width:100px;
+  height:100px;
+}
